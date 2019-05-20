@@ -15,8 +15,29 @@ public class Serie extends Film {
 		return id;
 	}
 
+	public int getSeasonQuantity() {
+		return seasonQuantity;
+	}
+
+	public void setSeasonQuantity(int seasonQuantity) {
+		this.seasonQuantity = seasonQuantity;
+	}
+
+	public Chapter[] getChapters() {
+		return chapters;
+	}
+
+	public void setChapters(Chapter[] chapters) {
+		this.chapters = chapters;
+	}
 	
-	
-	
-	
+	@Override
+	public String toString() {
+		return "Title: " + this.getTitle() + "\n" +
+				"Genre: " + this.getGenre() + "\n" +
+				"Year: " + this.getYear() + "\n" +
+				"Creator: " + this.getCreator() + "\n" +
+				"Duration: " + this.getDuration()+ "\n";
+	}
+
 }

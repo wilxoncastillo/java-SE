@@ -7,7 +7,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		showMenu();
+		Movie movie = new Movie("Coco", "Animation", "???", 120, (short) 2017);
+		System.out.println(movie.toString());
+		
+		//showMenu();
 	}
 
 	public static void showMenu() {
@@ -114,7 +117,6 @@ public class Main {
 	public static void makeReport(Date date) {
 		
 	}
-	
 
 }
 	

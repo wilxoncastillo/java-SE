@@ -9,27 +9,25 @@ public class Movie extends Film {
 		setYear(year);
 	}
 
-	public void showData() {
-		/*
-		System.out.println("Title: " + this.title);
-		System.out.println("Genre: " + this.genre);
-		System.out.println("Year: " + this.year);
-		System.out.println();
-		*/
-	}
-		
 	public int getId() {
 		return id;
 	}
-
 
 	public int getTimeViewed() {
 		return timeViewed;
 	}
 
-
 	public void setTimeViewed(int timeViewed) {
 		this.timeViewed = timeViewed;
+	}
+	
+	@Override
+	public String toString() {
+		return "Title: " + this.getTitle() + "\n" +
+				"Genre: " + this.getGenre() + "\n" +
+				"Year: " + this.getYear() + "\n" +
+				"Creator: " + this.getCreator() + "\n" +
+				"Duration: " + this.getDuration()+ "\n";
 	}
 	
 }
