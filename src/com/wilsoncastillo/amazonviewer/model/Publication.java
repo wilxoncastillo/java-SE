@@ -4,16 +4,15 @@ import java.util.Date;
 
 public class Publication {
 	private String title;
-	private Date editionDate;
 	private String editorial;	
+	private Date editionDate;
 	private String[] authors;
 	
-	public Publication(String title, Date editionDate, String editorial, String[] authors) {
+	public Publication(String title, Date editionDate, String editorial) {
 		super();
 		this.title = title;
-		this.editionDate = editionDate;
 		this.editorial = editorial;
-		this.authors = authors;
+		this.editionDate = editionDate;
 	}
 
 	public String getTitle() {
